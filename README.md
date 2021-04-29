@@ -1,9 +1,8 @@
 <html>
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Homepage - Wenxiang Ying</title>
+    Homepage - Wenxiang Ying
     <meta name="description" content="The Huo group develops new theoretical approaches to investigate chemical reactivities when they are enabled by intrinsically quantum mechanical behavior. These Quantum mechanical behaviors, such as the quantum tunneling of a proton and strong coupling to a quantized photon, has shown great promise in enabling new paradigms for chemical transformations that will profoundly impact catalysis, energy production, and the field of chemistry at large. Understanding the real-time dynamics of these processes will inspire transformative design principles that take advantage of intrinsic quantum behaviors and facilitate the quantum leap of chemistry. Accurately and efficiently simulating non-adiabatic transitions among these quantized electronic, vibronic, photonic, or hybridized states remains a central challenge in theoretical chemistry.  My group works to address this challenge by developing new quantum dynamics approaches that accurately simulate these processes and provide critical insights into these new phenomena.">
     <meta property="og:image" content="">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
