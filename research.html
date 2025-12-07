@@ -1,96 +1,241 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Research | Mohammad Elious Ali Mondal</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <title>Research | Wenxiang Ying</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description"
+          content="Research of Wenxiang Ying: quantum dynamics, cavity quantum electrodynamics, polariton chemistry, photophysics, and transport." />
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
 </head>
+
 <body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <div class="logo">
-        <a href="index.html#hero">Mohammad Elious Ali Mondal</a>
-      </div>
-      <nav class="nav-links">
-        <a href="index.html#about">About</a>
-        <a href="research.html">Research</a>
-        <a href="publications.html">Publications</a>
-        <a href="notes.html">Notes</a>
-        <a href="index.html#contact">Contact</a>
-      </nav>
-      <button class="theme-toggle" aria-label="Toggle dark mode">
-        ☾
-      </button>
-    </div>
-  </header>
-
-  <main>
-    <section class="section">
-      <div class="container">
-        <h1>Research</h1>
-        <p>
-          My research focuses on quantum dynamics and spectroscopy of molecular
-          exciton–polaritons, mixed quantum–classical methods, and open quantum
-          systems with structured environments.
+<header class="site-header">
+    <div class="container">
+        <h1 class="site-title">Wenxiang Ying</h1>
+        <p class="site-subtitle">
+            Postdoctoral Researcher · Theoretical & Computational Chemistry · University of Pennsylvania
         </p>
-      </div>
-    </section>
-
-    <section class="section section-alt">
-      <div class="container">
-        <h2>Current directions</h2>
-        <ul class="item-list">
-          <li>
-            <h3>Exciton–polaritons and cavity-modified spectroscopy</h3>
-            <p>
-              Developing quantum dynamics frameworks to study linear and nonlinear spectroscopy
-              (including 2D electronic spectroscopy) of molecular ensembles strongly coupled to
-              optical cavities, with a focus on polaron decoupling, long-lived polaritonic
-              coherence, and motional narrowing in disordered systems.
-            </p>
-          </li>
-          <li>
-            <h3>Mixed quantum–classical dynamics &amp; mapping approaches</h3>
-            <p>
-              Designing trajectory-based methods that combine PLDM dynamics with Lindblad
-              formalisms to treat both Markovian and non-Markovian dissipation, and exploring
-              spin-mapping and related mapping-based approaches to improve accuracy and
-              efficiency for strongly coupled light–matter systems.
-            </p>
-          </li>
-          <li>
-            <h3>Open quantum systems &amp; structured environments</h3>
-            <p>
-              Studying system–bath interactions under Drude–Lorentz and underdamped Brownian
-              spectral densities using correlation-function approaches, master equations, and
-              analog simulations, with an eye toward connecting microscopic models with
-              experimentally observed spectra and transport.
-            </p>
-          </li>
-          <li>
-            <h3>High-performance computing &amp; scientific software</h3>
-            <p>
-              Implementing scalable simulations using Python, C++, mpi4py, and scientific
-              libraries such as NumPy, SciPy, Numba, PyTorch, and Eigen, enabling studies of
-              quantum dynamics in large polaritonic systems with many molecules and cavity
-              modes.
-            </p>
-          </li>
-        </ul>
-      </div>
-    </section>
-  </main>
-
-  <!-- <footer class="site-footer">
-    <div class="container footer-inner">
-      <span>© <span id="year"></span> Mohammad Elious Ali Mondal</span>
-      <span class="footer-right">
-        Built with plain HTML &amp; CSS · Hosted on GitHub Pages
-      </span>
+        <nav class="site-nav">
+            <a href="index.html">Home</a>
+            <a href="research.html">Research</a>
+            <a href="publications.html">Publications</a>
+            <a href="notes.html">Notes</a>
+            <a href="CV_Wenxiang.pdf" target="_blank" rel="noopener">CV</a>
+        </nav>
     </div>
-  </footer> -->
+</header>
 
-  <script src="main.js"></script>
+<main class="container">
+
+    <!-- Overview -->
+    <section class="section">
+        <h2>Research Overview</h2>
+        <p>
+            My research lies at the interface of <strong>quantum dynamics</strong>,
+            <strong>cavity quantum electrodynamics</strong>, and
+            <strong>condensed-phase chemical physics</strong>.
+            I am broadly interested in how quantum coherence, dissipation, and
+            strong light–matter coupling work together to determine
+            chemical reactivity, photophysics, and transport in complex environments.
+        </p>
+        <p>
+            Methodologically, I work on rigorous and approximate
+            <strong>open quantum system approaches</strong>, including
+            hierarchical equations of motion, quantum master equations,
+            mixed quantum–classical dynamics, and path-integral inspired methods.
+            On the application side, I study
+            <strong>polaritonic chemistry</strong>,
+            <strong>exciton-polariton photophysics and transport</strong>,
+            and <strong>electron transfer in confined electromagnetic fields</strong>,
+            often in close contact with ongoing experiments.
+        </p>
+    </section>
+
+    <!-- Quantum dynamics methods -->
+    <section class="section section-alt">
+        <h2>Quantum Dynamics Methods</h2>
+        <p>
+            A central theme of my work is the development and application of
+            <strong>quantum dynamics methods</strong> for open systems in condensed phases.
+            These methods aim to capture non-Markovian environmental effects,
+            quantum coherence, and strong system–bath coupling on equal footing.
+        </p>
+        <ul class="item-list">
+            <li>
+                <strong>Hierarchical Equations of Motion (HEOM).</strong>
+                Construction and efficient implementation of HEOM for
+                vibrational and electronic degrees of freedom in polaritonic systems,
+                including convergence analysis and interpretation of the hierarchy
+                in terms of environmental memory.
+            </li>
+            <li>
+                <strong>Approximate Quantum Master Equations.</strong>
+                Development and benchmarking of Redfield-type,
+                polaron-transformed, and perturbative master equations to
+                understand their range of validity in realistic parameter regimes.
+            </li>
+            <li>
+                <strong>Mixed Quantum–Classical Dynamics and Ring-Polymer Methods.</strong>
+                Use of surface-hopping, Ehrenfest, and ring-polymer molecular
+                dynamics to describe photoinduced processes and to provide
+                intuitive pictures that complement more rigorous approaches.
+            </li>
+            <li>
+                <strong>Future directions.</strong>
+                Extending these methods with tensor-network ideas and
+                reduced-dimensional models to treat larger, more structured environments.
+            </li>
+        </ul>
+    </section>
+
+    <!-- Cavity QED and polariton chemistry -->
+    <section class="section">
+        <h2>Cavity QED and Polaritonic Chemistry</h2>
+        <p>
+            A major focus of my doctoral and postdoctoral research is
+            <strong>collective strong light–matter coupling</strong> and
+            its impact on chemical dynamics.
+            By embedding molecules or materials inside optical cavities or
+            nanophotonic structures, one can form hybrid light–matter states
+            (polaritons) that modify reaction pathways and energy-transport channels.
+        </p>
+        <ul class="item-list">
+            <li>
+                <strong>Vibrational Polariton Chemistry.</strong>
+                Quantum-dynamical studies of how coupling molecular vibrations
+                to cavity modes can enhance, suppress, or reshape reaction rates,
+                including the identification of “resonant suppression” conditions
+                and the role of dark-state manifolds.
+            </li>
+            <li>
+                <strong>Exciton-Polariton Photophysics.</strong>
+                Microscopic modelling of exciton–photon hybridization in
+                organic and molecular systems, with particular interest in
+                group-velocity renormalization, dispersion engineering,
+                and the interplay between coherent and incoherent transport.
+            </li>
+            <li>
+                <strong>Cavity-Modified Electron Transfer.</strong>
+                Ongoing work on Fermi’s-golden-rule based rate theories for
+                electron transfer in lossy cavities, aiming to unify
+                Marcus–Jortner-type descriptions with microscopic cavity QED
+                and to clarify under what conditions cavity modes can
+                substantially alter charge-transfer kinetics.
+            </li>
+            <li>
+                <strong>Connection to Experiments.</strong>
+                Many of these models are constructed with specific experimental
+                platforms in mind, including Fabry–Pérot cavities, plasmonic
+                structures, and microcavities hosting organic exciton-polaritons.
+            </li>
+        </ul>
+        <p>
+            Several of these efforts are summarized and reviewed in my
+            <em>Annual Review of Physical Chemistry</em> article on
+            collective effects in polaritonic chemistry, photophysics, and
+            transport. Please see the <a href="publications.html">Publications</a>
+            page for details.
+        </p>
+    </section>
+
+    <!-- Photophysics, transport, and nanophotonics -->
+    <section class="section section-alt">
+        <h2>Photophysics, Transport, and Nanophotonics</h2>
+        <p>
+            Beyond chemical reactivity, I am interested in how structured
+            electromagnetic environments and molecular organization control
+            <strong>energy transport and photophysical response</strong>
+            in condensed phases.
+        </p>
+        <ul class="item-list">
+            <li>
+                <strong>Exciton and Polariton Transport.</strong>
+                Analysis of how disorder, vibronic coupling, and cavity
+                loss affect exciton and polariton propagation, including
+                the emergence of ballistic vs diffusive regimes and the
+                possibility of long-range transport under strong coupling.
+            </li>
+            <li>
+                <strong>Nanophotonic Field Structures.</strong>
+                Use of simplified models and classical electrodynamics
+                to bridge between microscopic quantum-dynamics descriptions
+                and realistic field profiles in cavities, plasmonic resonators,
+                and metasurfaces.
+            </li>
+        </ul>
+    </section>
+
+    <!-- Electronic structure and nonadiabatic dynamics -->
+    <section class="section">
+        <h2>Electronic Structure and Nonadiabatic Dynamics</h2>
+        <p>
+            To provide accurate input for quantum dynamics, I employ and
+            learn a variety of <strong>excited-state electronic structure
+            methods</strong>, together with trajectory-based
+            <strong>nonadiabatic dynamics</strong>.
+        </p>
+        <ul class="item-list">
+            <li>
+                <strong>Excited-State Methods.</strong>
+                Experience with CASSCF/CASPT2, MRCI, EOM-CC, TDDFT, and
+                related approaches for computing electronic spectra,
+                potential-energy surfaces, and couplings.
+            </li>
+            <li>
+                <strong>Ab Initio Nonadiabatic Dynamics.</strong>
+                Application of ab initio trajectory-based methods to model
+                photochemical processes and ultrafast relaxation in molecular systems,
+                and coupling such simulations to model cavity environments.
+            </li>
+        </ul>
+    </section>
+
+    <!-- Current and future directions -->
+    <section class="section section-alt">
+        <h2>Current and Future Directions</h2>
+        <p>
+            Going forward, I aim to build a research program that combines
+            <strong>rigorous quantum dynamics</strong>,
+            <strong>cavity and nanophotonics concepts</strong>, and
+            <strong>electronic-structure theory</strong> to address open
+            problems in polaritonic chemistry and condensed-phase quantum
+            dynamics more broadly.
+        </p>
+        <ul class="item-list">
+            <li>
+                Developing unified theoretical frameworks for
+                cavity-modified charge and energy transfer that incorporate
+                realistic cavity loss, multimode structure, and complex environments.
+            </li>
+            <li>
+                Exploring connections between polariton transport and
+                non-equilibrium many-body physics, including possible links
+                to hydrodynamic or KPZ-type descriptions in driven-dissipative systems.
+            </li>
+            <li>
+                Integrating ab initio electronic-structure data with
+                coarse-grained cavity QED models to make closer, quantitative
+                contact with experiments on molecular and material systems.
+            </li>
+        </ul>
+        <p>
+            Prospective students and collaborators interested in these topics
+            are welcome to get in touch by email.
+        </p>
+    </section>
+
+</main>
+
+<footer class="site-footer">
+    <div class="container">
+        <p>&copy; <span id="year"></span> Wenxiang Ying · Built with GitHub Pages</p>
+    </div>
+    <script>
+        const y = document.getElementById("year");
+        if (y) { y.textContent = new Date().getFullYear(); }
+    </script>
+</footer>
 </body>
 </html>
