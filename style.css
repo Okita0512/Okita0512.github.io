@@ -348,4 +348,43 @@
       text-align: left;
     }
   }
+
+/* Academic profile icons */
+.profile-links {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 0.8rem;
+    flex-wrap: wrap;
+}
+
+.profile-links a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 6px;
+    background-color: #f5f5f5;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.profile-links a:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+/* Brand colors */
+.icon-scholar { background-color: #e6f1fb; }
+.icon-orcid   { background-color: #a6ce39; }
+.icon-github  { background-color: #24292e; }
+.icon-rg      { background-color: #00a79d; }
+.icon-cv      { background-color: #444444; }
+
+.profile-links svg {
+    width: 20px;
+    height: 20px;
+    fill: white;
+}
+
   
