@@ -8,239 +8,178 @@
     <link rel="stylesheet" href="style.css" />
     <script src="main.js" defer></script>
 </head>
+
 <body>
-    <header class="site-header">
-        <div class="container">
-            <h1 class="site-title">Wenxiang Ying</h1>
-            <p class="site-subtitle">
-                Postdoctoral Researcher · Theoretical & Computational Chemistry · University of Pennsylvania
-            </p>
-            <nav class="site-nav">
-                <a href="index.html">Home</a>
-                <a href="research.html">Research</a>
-                <a href="publications.html">Publications</a>
-                <a href="notes.html">Notes</a>
-                <a href="CV_Wenxiang.pdf" target="_blank" rel="noopener">CV</a>
-            </nav>
-        </div>
-    </header>
+<header class="site-header">
+    <div class="container">
+        <h1 class="site-title">Wenxiang Ying</h1>
+        <p class="site-subtitle">
+            Postdoctoral Researcher · Theoretical & Computational Chemistry · University of Pennsylvania
+        </p>
+        <nav class="site-nav">
+            <a href="index.html">Home</a>
+            <a href="research.html">Research</a>
+            <a href="publications.html">Publications</a>
+            <a href="notes.html">Notes</a>
+            <a href="CV_Wenxiang.pdf" target="_blank" rel="noopener">CV</a>
+        </nav>
+    </div>
+</header>
 
-    <main class="container">
-        <!-- Profile section -->
-        <section class="intro profile-section">
-            <div style="display: flex; flex-wrap: wrap; gap: 2rem; align-items: center;">
-                
-                <!-- Profile image -->
-                <div style="flex: 0 0 200px; text-align: center;">
-                    <img 
-                        src="assets/picture.jpg" 
-                        alt="Wenxiang Ying"
-                        style="
-                            width: 200px; 
-                            max-width: 100%; 
-                            border-radius: 8px; 
-                            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-                        "
-                    />
-                    <!-- Profile links -->
-                        <!-- Academic profile icons -->
-                        <div class="profile-links">
+<main class="container">
 
-                            <!-- Google Scholar -->
-                                <a class="icon-scholar" href="https://scholar.google.com/citations?user=vXP8ZZUAAAAJ" 
-                                   target="_blank" rel="noopener" title="Google Scholar">
-                            <svg viewBox="0 0 24 24">
-                                <path d="M12 3L1 9l11 6 9-4.91V17h2V9L12 3z"/>
-                                <path d="M11 12.65L3.24 8.5 11 4.35l7.76 4.15L11 12.65z"/>
-                            </svg>
-                        </a>
+    <!-- Profile / About section -->
+    <section class="intro profile-section">
+        <div style="display: flex; flex-wrap: wrap; gap: 2rem; align-items: center;">
 
-                            <!-- ORCID -->
-                            <a class="icon-orcid" href="https://orcid.org/my-orcid?orcid=0000-0003-3188-020X"
-                               target="_blank" rel="noopener" title="ORCID">
-                            <svg viewBox="0 0 24 24">
-                                <path d="M7 2h10a5 5 0 010 10H7V2z"/>
-                                <path d="M7 14h7a3 3 0 010 6H7v-6z"/>
-                                <circle cx="7" cy="7" r="1.3"/>
-                            </svg>
-                        </a>
+            <!-- Profile image + icons -->
+            <div style="flex: 0 0 200px; text-align: center;">
+                <img
+                    src="assets/picture.jpg"
+                    alt="Wenxiang Ying"
+                    style="
+                        width: 200px;
+                        max-width: 100%;
+                        border-radius: 8px;
+                        box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+                    "
+                />
 
-                        <!-- GitHub -->
-                            <a class="icon-github" href="https://github.com/Okita0512"
-                               target="_blank" rel="noopener" title="GitHub">
-                            <svg viewBox="0 0 24 24">
-                                <path d="M12 .5C5.73.5.5 5.74.5 12.02c0 5.1 3.29 9.42 7.86 10.95.57.1.78-.25.78-.56
-                                0-.28-.01-1.02-.02-2-3.2.7-3.88-1.54-3.88-1.54-.53-1.35-1.29-1.71-1.29-1.71
-                                -1.05-.72.08-.71.08-.71 1.16.08 1.77 1.19 1.77 1.19
-                                1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55
-                                -2.55-.29-5.23-1.28-5.23-5.69
-                                0-1.26.45-2.29 1.19-3.1
-                                -.12-.29-.52-1.46.11-3.05
-                                0 0 .97-.31 3.18 1.18
-                                .92-.26 1.9-.39 2.88-.39
-                                .98 0 1.96.13 2.88.39
-                                2.2-1.49 3.17-1.18 3.17-1.18
-                                .63 1.59.23 2.76.12 3.05
-                                .74.81 1.19 1.84 1.19 3.1
-                                0 4.42-2.69 5.39-5.25 5.67
-                                .41.35.78 1.05.78 2.12
-                                0 1.53-.01 2.77-.01 3.14
-                                0 .31.2.67.79.56
-                                4.57-1.53 7.85-5.85 7.85-10.95
-                                C23.5 5.74 18.27.5 12 .5z"/>
-                            </svg>
-                        </a>
+                <!-- Academic profile icons -->
+                <div class="profile-links">
 
-                        <!-- ResearchGate -->
-                        <a class="icon-rg" href="https://www.researchgate.net/profile/Wenxiang-Ying"
-                           target="_blank" rel="noopener" title="ResearchGate">
-                            <svg viewBox="0 0 24 24">
-                                <path d="M12 2a10 10 0 100 20 10 10 0 000-20zm3.8 14.3h-1.4l-1.9-3h-1.7v3H9.6V7.7h3.6
-                                c1.9 0 3.1 1.1 3.1 2.7
-                                0 1.3-.8 2.1-1.9 2.5l2.4 3.4zm-3.1-7.4h-1.9v3.1h1.9c1 0 1.6-.6 1.6-1.6
-                                0-1-.6-1.5-1.6-1.5z"/>
-                            </svg>
-                        </a>
+                    <!-- Google Scholar -->
+                    <a class="icon-scholar"
+                       href="https://scholar.google.com/citations?user=vXP8ZZUAAAAJ"
+                       target="_blank" rel="noopener"
+                       title="Google Scholar">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M12 3L1 9l11 6 9-4.91V17h2V9L12 3z"/>
+                            <path d="M11 12.65L3.24 8.5 11 4.35l7.76 4.15L11 12.65z"/>
+                        </svg>
+                    </a>
 
-                        <!-- CV -->
-                        <a class="icon-cv" href="CV_Wenxiang.pdf"
-                           target="_blank" rel="noopener" title="Curriculum Vitae">
-                            <svg viewBox="0 0 24 24">
-                                <path d="M6 2h9l5 5v15a2 2 0 01-2 2H6a2 2 0 01-2-2V4a2 2 0 012-2z"/>
-                                <path d="M14 2v6h6"/>
-                                <path d="M8 13h8M8 17h8M8 9h3"/>
-                            </svg>
-                        </a>
-                    </div>
-                    
+                    <!-- ORCID -->
+                    <a class="icon-orcid"
+                       href="https://orcid.org/0000-0003-3188-020X"
+                       target="_blank" rel="noopener"
+                       title="ORCID">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M7 2h10a5 5 0 010 10H7V2z"/>
+                            <path d="M7 14h7a3 3 0 010 6H7v-6z"/>
+                            <circle cx="7" cy="7" r="1.3"/>
+                        </svg>
+                    </a>
+
+                    <!-- GitHub -->
+                    <a class="icon-github"
+                       href="https://github.com/Okita0512"
+                       target="_blank" rel="noopener"
+                       title="GitHub">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M12 .5C5.73.5.5 5.74.5 12.02c0 5.1 3.29 9.42 7.86 10.95.57.1.78-.25.78-.56
+                            0-.28-.01-1.02-.02-2-3.2.7-3.88-1.54-3.88-1.54-.53-1.35-1.29-1.71-1.29-1.71
+                            -1.05-.72.08-.71.08-.71 1.16.08 1.77 1.19 1.77 1.19
+                            1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55
+                            -2.55-.29-5.23-1.28-5.23-5.69
+                            0-1.26.45-2.29 1.19-3.1
+                            -.12-.29-.52-1.46.11-3.05
+                            0 0 .97-.31 3.18 1.18
+                            .92-.26 1.9-.39 2.88-.39
+                            .98 0 1.96.13 2.88.39
+                            2.2-1.49 3.17-1.18 3.17-1.18
+                            .63 1.59.23 2.76.12 3.05
+                            .74.81 1.19 1.84 1.19 3.1
+                            0 4.42-2.69 5.39-5.25 5.67
+                            .41.35.78 1.05.78 2.12
+                            0 1.53-.01 2.77-.01 3.14
+                            0 .31.2.67.79.56
+                            4.57-1.53 7.85-5.85 7.85-10.95
+                            C23.5 5.74 18.27.5 12 .5z"/>
+                        </svg>
+                    </a>
+
+                    <!-- ResearchGate -->
+                    <a class="icon-rg"
+                       href="https://www.researchgate.net/profile/Wenxiang-Ying"
+                       target="_blank" rel="noopener"
+                       title="ResearchGate">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M12 2a10 10 0 100 20 10 10 0 000-20zm3.8 14.3h-1.4l-1.9-3h-1.7v3H9.6V7.7h3.6
+                            c1.9 0 3.1 1.1 3.1 2.7
+                            0 1.3-.8 2.1-1.9 2.5l2.4 3.4zm-3.1-7.4h-1.9v3.1h1.9
+                            c1 0 1.6-.6 1.6-1.6
+                            0-1-.6-1.5-1.6-1.5z"/>
+                        </svg>
+                    </a>
+
+                    <!-- CV -->
+                    <a class="icon-cv"
+                       href="CV_Wenxiang.pdf"
+                       target="_blank" rel="noopener"
+                       title="Curriculum Vitae">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M6 2h9l5 5v15a2 2 0 01-2 2H6a2 2 0 01-2-2V4a2 2 0 012-2z"/>
+                            <path d="M14 2v6h6"/>
+                            <path d="M8 13h8M8 17h8M8 9h3"/>
+                        </svg>
+                    </a>
+
                 </div>
-
-                <!-- About text -->
-                <div style="flex: 1; min-width: 260px;">
-                    <h2>About Me</h2>
-                    <p>
-                        I am a postdoctoral researcher in the 
-                        <strong>Department of Chemistry at the University of Pennsylvania</strong>, working with 
-                        Prof. <strong>Abraham Nitzan</strong>. My research focuses on 
-                        <strong>quantum dynamics</strong> and <strong>cavity quantum electrodynamics</strong>,
-                        with an emphasis on how confined light–matter interactions reshape
-                        chemical reactivity, photophysics, and transport.
-                    </p>
-                    <p>
-                        I received my <strong>M.S. and Ph.D. in Chemistry</strong> from the 
-                        <strong>University of Rochester</strong> (advisor: Prof. <strong>Pengfei Huo</strong>) in 2025.
-                        My doctoral work developed theoretical frameworks and quantum dynamics simulations
-                        for <strong>polaritonic chemistry, photophysics, and transport</strong>.
-                        Before that, I obtained my B.S. in <strong>Chemical Physics</strong> from the 
-                        <strong>University of Science and Technology of China (USTC)</strong>.
-                    </p>
-                </div>
-
             </div>
-        </section>
 
-        <!-- Research highlights -->
-        <section>
-            <h2>Research Interests</h2>
-            <ul>
-                <li>
-                    <strong>Quantum Dynamics Methods</strong>: hierarchical equations of motion,
-                    approximate quantum master equations, tensor-network approaches,
-                    mixed quantum–classical dynamics, and ring-polymer molecular dynamics.
-                </li>
-                <li>
-                    <strong>Cavity Quantum Electrodynamics & Polaritons</strong>: exciton-polariton
-                    photophysics and transport, vibrational polariton chemistry, collective strong
-                    light–matter coupling, and cavity spectroscopy.
-                </li>
-                <li>
-                    <strong>Finite-Difference Time-Domain (FDTD) Simulations</strong> of nanoparticle
-                    metasurfaces and nanophotonic structures.
-                </li>
-                <li>
-                    <strong>Ab Initio Electronic Structure & Nonadiabatic Dynamics</strong>:
-                    excited-state methods (CASSCF, CASPT2, MRCI, EOM-CC, TDDFT) and
-                    ab initio nonadiabatic molecular dynamics for photoexcited systems.
-                </li>
-            </ul>
-            <p>
-                You can read more on the <a href="research.html">Research</a> and 
-                <a href="publications.html">Publications</a> pages.
-            </p>
-        </section>
+            <!-- About text -->
+            <div style="flex: 1; min-width: 260px;">
+                <h2>About Me</h2>
+                <p>
+                    I am a postdoctoral researcher in the
+                    <strong>Department of Chemistry at the University of Pennsylvania</strong>,
+                    working with Prof. <strong>Abraham Nitzan</strong>.
+                    My research focuses on <strong>quantum dynamics</strong> and
+                    <strong>cavity quantum electrodynamics</strong>, with an emphasis on how
+                    confined light–matter interactions reshape chemical reactivity,
+                    photophysics, and transport.
+                </p>
+                <p>
+                    I received my <strong>M.S. and Ph.D. in Chemistry</strong> from the
+                    <strong>University of Rochester</strong> (advisor: Prof. <strong>Pengfei Huo</strong>) in 2025.
+                    Before that, I obtained my B.S. in <strong>Chemical Physics</strong> from the
+                    <strong>University of Science and Technology of China (USTC)</strong>.
+                </p>
+            </div>
 
-        <!-- Current position & contact -->
-        <section>
-            <h2>Current Position</h2>
-            <p>
-                <strong>Postdoctoral Researcher</strong>, Department of Chemistry,
-                University of Pennsylvania (2025–present)<br />
-                Advisor: Prof. Abraham Nitzan
-            </p>
-
-            <h3>Contact</h3>
-            <p>
-                Department of Chemistry, University of Pennsylvania<br />
-                263 Cret Wing, 231 S. 34 Street<br />
-                Philadelphia, PA 19104, USA
-            </p>
-            <p>
-                Phone: <a href="tel:+15855400617">(+1) 585-540-0617</a><br />
-                Email: <a href="mailto:wying3@sas.upenn.edu">wying3@sas.upenn.edu</a><br />
-                GitHub: <a href="https://github.com/Okita0512" target="_blank" rel="noopener">Okita0512</a><br />
-                Google Scholar: <a href="https://scholar.google.com" target="_blank" rel="noopener">
-                    Google Scholar profile
-                </a>
-                <https://scholar.google.com/citations?user=vXP8ZZUAAAAJ>
-            </p>
-        </section>
-
-        <!-- Selected highlights -->
-        <section>
-            <h2>Selected Highlights</h2>
-            <h3>Awards</h3>
-            <ul>
-                <li>Chemical Computing Group Excellence Award for Graduate Students, ACS COMP Division (2025)</li>
-                <li>Finalist, ACS Physical Chemistry Graduate Awards in Theoretical Chemistry, ACS PHYS Division (2024)</li>
-                <li>Moses Passer Memorial Fellowship, University of Rochester (2024)</li>
-                <li>Esther M. Conwell Graduate Fellowship, University of Rochester (2023)</li>
-                <li>Excellent Teaching Assistant Award, USTC (2020, 2021)</li>
-            </ul>
-
-            <h3>Publications</h3>
-            <ul>
-                <li>
-                    <em>Collective Effects in Polaritonic Chemistry, Photophysics, and Transport</em>,
-                    <strong>Annual Review of Physical Chemistry</strong>, 77, 2026 (accepted).
-                </li>
-                <li>
-                    <em>Microscopic Theory of Polariton Group Velocity Renormalization</em>,
-                    <strong>Nature Communications</strong>, 16, 6950 (2025).
-                </li>
-                <li>
-                    <em>Theoretical Insights into the Resonant Suppression Effect in Vibrational Polariton Chemistry</em>,
-                    <strong>J. Am. Chem. Soc.</strong>, 147, 19727–19737 (2025).
-                </li>
-            </ul>
-            <p>
-                A full list of publications is available on the 
-                <a href="publications.html">Publications</a> page.
-            </p>
-        </section>
-    </main>
-
-    <footer class="site-footer">
-        <div class="container">
-            <p>
-                &copy; <span id="year"></span> Wenxiang Ying.
-                Built with GitHub Pages.
-            </p>
         </div>
-        <script>
-            // Simple inline script to set the year if main.js doesn't already do it
-            const ySpan = document.getElementById('year');
-            if (ySpan) { ySpan.textContent = new Date().getFullYear(); }
-        </script>
-    </footer>
+    </section>
+
+    <!-- Contact -->
+    <section>
+        <h2>Contact</h2>
+        <p>
+            Department of Chemistry, University of Pennsylvania<br />
+            263 Cret Wing, 231 S. 34 Street<br />
+            Philadelphia, PA 19104, USA
+        </p>
+        <p>
+            Email:
+            <a href="mailto:wying3@sas.upenn.edu">wying3@sas.upenn.edu</a><br />
+            Google Scholar:
+            <a href="https://scholar.google.com/citations?user=vXP8ZZUAAAAJ"
+               target="_blank" rel="noopener">
+                Profile
+            </a>
+        </p>
+    </section>
+
+</main>
+
+<footer class="site-footer">
+    <div class="container">
+        <p>&copy; <span id="year"></span> Wenxiang Ying · Built with GitHub Pages</p>
+    </div>
+    <script>
+        const y = document.getElementById("year");
+        if (y) { y.textContent = new Date().getFullYear(); }
+    </script>
+</footer>
 </body>
 </html>
