@@ -148,7 +148,7 @@ main.container {
     gap: 1.5rem;
     flex-wrap: wrap;
     padding-top: 0.25rem;
-    padding-bottom: 1.4rem;
+    padding-bottom: 0.25rem;
     font-size: 1.05rem;
 }
 
