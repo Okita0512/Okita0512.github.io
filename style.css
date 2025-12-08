@@ -82,28 +82,30 @@ main.container {
     top: 0;
     z-index: 10;
     backdrop-filter: blur(12px);
-    background: transparent;
+    background: #1e3158;
     border-bottom: none;
 }
 
 /* New: styles for current HTML structure */
 .site-header .container {
     padding: 0.75rem 1.25rem 0.5rem;
-    background: var(--bg);
-    border-radius: 0 0 12px 12px;
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.18);
+    background: transparent;
+    border-radius: 0;
+    box-shadow: none;
 }
 
 .site-title {
     margin: 0.75rem 0 0.25rem;
     font-size: 2.1rem;
     text-align: center;
+    color: #ffffff;
+    letter-spacing: 0.05em;
 }
 
 .site-subtitle {
     margin: 0 0 0.75rem;
     text-align: center;
-    color: var(--muted);
+    color: #d8e0ef;
     font-size: 0.98rem;
 }
 
@@ -118,15 +120,15 @@ main.container {
 
 .site-nav a {
     text-decoration: none;
-    color: var(--muted);
+    color: #d8e0ef;
     padding: 0.25rem 0.75rem;
     border-radius: 999px;
     transition: background 0.15s ease, color 0.15s ease;
 }
 
 .site-nav a:hover {
-    background: var(--accent-soft);
-    color: var(--accent);
+    background: rgba(255, 255, 255, 0.16);
+    color: #ffffff;
 }
 
 /* (Legacy header styles from template – safe to leave) */
@@ -342,8 +344,9 @@ main.container {
 
 .pub-num {
     flex: 0 0 56px;
-    min-height: 90px;
-    background: #6b7280;
+    min-height: 100%;
+    align-self: stretch;
+    background: #1e3158;
     color: #ffffff;
     font-weight: 700;
     font-size: 1.05rem;
