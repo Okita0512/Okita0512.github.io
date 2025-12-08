@@ -330,6 +330,11 @@ p,
     justify-content: center;
 }
 
+.geo-info {
+    color: var(--muted);
+    font-size: 0.85rem;
+}
+
 .pub-title {
     font-weight: 600;
 }
