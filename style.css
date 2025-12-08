@@ -42,6 +42,7 @@ body {
     font-size: 16px;
     letter-spacing: 0.01em;
     line-height: 1.65;
+    background: #3a3a3a;
 }
 
 /* --------- Global text justification --------- */
@@ -58,6 +59,22 @@ p,
     padding: 0 1.25rem;
 }
 
+main.container {
+    background: var(--bg);
+    border-radius: 12px;
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.16);
+    padding: 2rem 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.site-footer .container {
+    background: var(--bg);
+    border-radius: 12px 12px 0 0;
+    box-shadow: 0 -6px 18px rgba(0, 0, 0, 0.14);
+    padding: 1.25rem 1.5rem;
+    margin-top: 1.5rem;
+}
+
 /* ---------- Header / nav ---------- */
 
 .site-header {
@@ -65,13 +82,16 @@ p,
     top: 0;
     z-index: 10;
     backdrop-filter: blur(12px);
-    background: color-mix(in srgb, var(--bg) 80%, transparent);
-    border-bottom: 1px solid var(--border);
+    background: transparent;
+    border-bottom: none;
 }
 
 /* New: styles for current HTML structure */
 .site-header .container {
     padding: 0.75rem 1.25rem 0.5rem;
+    background: var(--bg);
+    border-radius: 0 0 12px 12px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.18);
 }
 
 .site-title {
@@ -286,35 +306,36 @@ p,
 .social-row {
     display: flex;
     align-items: center;
-    gap: 0.5rem;
-    flex-wrap: nowrap;
+    gap: 0.6rem;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-.icon-pill {
+.social-icon {
     display: inline-flex;
     align-items: center;
-    gap: 0.4rem;
-    padding: 0.25rem 0.45rem;
-    border: 1px solid var(--border);
-    border-radius: 10px;
-    color: var(--text);
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 8px;
+    background: #1f6feb; /* GitHub blue-ish */
+    color: #ffffff;
     text-decoration: none;
-    background: var(--card);
-    transition: background 0.15s ease, border-color 0.15s ease, transform 0.15s ease;
-    font-size: 0.9rem;
+    transition: transform 0.12s ease, box-shadow 0.12s ease, background 0.12s ease;
 }
 
-.icon-pill:hover {
-    background: var(--accent-soft);
-    border-color: var(--accent);
+.social-icon:hover {
     transform: translateY(-1px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.12);
     text-decoration: none;
+    background: #1556b3;
 }
 
-.icon-pill svg {
-    width: 16px;
-    height: 16px;
+.social-icon svg {
+    width: 22px;
+    height: 22px;
     flex-shrink: 0;
+    fill: currentColor;
 }
 
 .pub-num {
@@ -336,7 +357,7 @@ p,
 }
 
 .pub-title {
-    font-weight: 600;
+    font-weight: 500;
     font-size: 1.12rem;
 }
 
