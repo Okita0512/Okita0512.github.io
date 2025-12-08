@@ -1,14 +1,14 @@
 /* ---------- Base theme variables ---------- */
 
 :root {
-    --bg: rgba(255, 249, 196, 0.5);
-    --bg-alt: rgba(240, 239, 182, 0.5);
+    --bg: #fffbe6;
+    --bg-alt: #f9f4d9;
     --text: #1d1d1f;
     --muted: #555;
     --accent: #2563eb;
     --accent-soft: rgba(37, 99, 235, 0.12);
     --border: #e5e5ea;
-    --card: rgba(255, 249, 196, 0.5);
+    --card: #fffdf1;
 }
 
 /* Dark mode overrides (toggled by JS) */
@@ -409,8 +409,8 @@ a.pub-title:hover {
 /* ---------- Footer ---------- */
 
 .site-footer {
-    border-top: 1px solid var(--border);
-    padding: 1rem 0;
+    border-top: none;
+    padding: 1.5rem 0 0 0;
     font-size: 0.9rem;
 }
 
