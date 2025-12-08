@@ -343,6 +343,17 @@ main.container {
     fill: currentColor;
 }
 
+.welcome-banner {
+    margin-bottom: 1rem;
+}
+
+.welcome-banner img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.18);
+}
+
 .pub-num {
     flex: 0 0 56px;
     min-height: 100%;
