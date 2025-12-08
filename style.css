@@ -345,16 +345,16 @@ main.container {
 
 .welcome-banner {
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
     margin-bottom: 1.2rem;
 }
 
 .welcome-banner img {
-    width: 65%;
-    max-width: 520px;
+    width: 320px;
+    max-width: 100%;
     height: auto;
-    border-radius: 12px;
-    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.18);
+    border-radius: 8px;
+    box-shadow: none;
     display: block;
 }
 
