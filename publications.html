@@ -29,19 +29,13 @@
     <section class="section">
         <h2>Publications</h2>
         <p>
-            (<sup>*</sup> denotes corresponding author; # denotes authors contributed equally.)
+            (* denotes corresponding author; # denotes authors contributed equally.)
         </p>
         <p>
             A complete and up-to-date list can also be found on my
             <a href="https://scholar.google.com/citations?user=vXP8ZZUAAAAJ" target="_blank" rel="noopener">
                 Google Scholar
             </a>.
-        </p>
-        <p style="font-size:0.9rem;color:#6b7280;">
-            Each entry can optionally include: a featured figure (left), a journal link (venue line),
-            and small buttons for code / data. To add a figure for a paper, place an image
-            in <code>assets/papers/</code> and insert an <code>&lt;img&gt;</code> tag in the
-            grey box for that entry.
         </p>
     </section>
 
@@ -592,7 +586,10 @@
 
 <footer class="site-footer">
     <div class="container">
-        <p>&copy; <span id="year"></span> Wenxiang Ying &middot; Built with GitHub Pages</p>
+        <p style="display:flex;align-items:center;gap:0.6rem;flex-wrap:wrap;">
+            <span>&copy; <span id="year"></span> Wenxiang Ying &middot; Built with GitHub Pages</span>
+            <span id="geo-info" class="geo-info"></span>
+        </p>
     </div>
     <script>
         const y = document.getElementById("year");
