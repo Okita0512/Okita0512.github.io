@@ -1,5 +1,8 @@
 // Set current year in footer
-document.getElementById("year").textContent = new Date().getFullYear();
+const yearEl = document.getElementById("year");
+if (yearEl) {
+  yearEl.textContent = new Date().getFullYear();
+}
 
 // Simple dark-mode toggle using localStorage
 const root = document.documentElement;
@@ -13,12 +16,13 @@ if (savedTheme === "dark") {
 
 // Update button icon based on theme
 function updateIcon() {
+  if (!toggleBtn) return;
   const isDark = root.getAttribute("data-theme") === "dark";
-  toggleBtn.textContent = isDark ? "☀︎" : "☾";
+  toggleBtn.textContent = isDark ? "??" : "??";
 }
-updateIcon();
 
 if (toggleBtn) {
+  updateIcon();
   toggleBtn.addEventListener("click", () => {
     const isDark = root.getAttribute("data-theme") === "dark";
     if (isDark) {
@@ -50,3 +54,25 @@ document.querySelectorAll("ol.pub-list").forEach((list) => {
     flex.prepend(numDiv);
   });
 });
+
+// Fetch visitor continent and country using a free API
+async function setGeo() {
+  const geoSpan = document.getElementById("geo-info");
+  if (!geoSpan) return;
+
+  try {
+    const res = await fetch("https://ipapi.co/json/");
+    if (!res.ok) throw new Error("geo fetch failed");
+    const data = await res.json();
+    const continent = data.continent_code || data.continent || "";
+    const country = data.country_name || data.country || "";
+    if (continent || country) {
+      geoSpan.textContent = `Visitor: ${continent}${continent && country ? " ? " : ""}${country}`;
+    }
+  } catch (err) {
+    const geoSpan = document.getElementById("geo-info");
+    if (geoSpan) geoSpan.textContent = "";
+  }
+}
+
+setGeo();
