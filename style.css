@@ -35,6 +35,7 @@ html,
 body {
     margin: 0;
     padding: 0;
+    background: #3a3a3a;
 }
 
 body {
@@ -42,7 +43,6 @@ body {
     font-size: 16px;
     letter-spacing: 0.01em;
     line-height: 1.65;
-    background: #3a3a3a;
 }
 
 /* --------- Global text justification --------- */
@@ -309,6 +309,7 @@ main.container {
     gap: 0.6rem;
     flex-wrap: wrap;
     justify-content: center;
+    margin-top: 0.5rem;
 }
 
 .social-icon {
@@ -318,8 +319,9 @@ main.container {
     width: 44px;
     height: 44px;
     border-radius: 8px;
-    background: #1f6feb; /* GitHub blue-ish */
+    background: #1f6feb;
     color: #ffffff;
+    border: 1px solid #1f6feb;
     text-decoration: none;
     transition: transform 0.12s ease, box-shadow 0.12s ease, background 0.12s ease;
 }
@@ -357,7 +359,7 @@ main.container {
 }
 
 .pub-title {
-    font-weight: 500;
+    font-weight: 400;
     font-size: 1.12rem;
 }
 
