@@ -347,6 +347,7 @@ main.container {
     display: flex;
     justify-content: flex-start;
     margin-bottom: 1.2rem;
+    align-self: flex-start;
 }
 
 .welcome-banner img {
