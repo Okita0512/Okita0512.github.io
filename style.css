@@ -78,7 +78,7 @@ main.container {
 .profile-top {
     display: flex;
     flex-wrap: wrap;
-    gap: 2.5rem;
+    gap: 2rem;
     align-items: flex-start;
     justify-content: center;
 }
@@ -91,7 +91,16 @@ main.container {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex: 1 1 360px;
+    flex: 1 1 420px;
+}
+
+.welcome-col img {
+    max-width: 420px;
+    width: 100%;
+    height: auto;
+    border: 0;
+    box-shadow: none;
+    display: block;
 }
 
 .about-text {
