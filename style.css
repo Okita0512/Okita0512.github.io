@@ -38,11 +38,10 @@ body {
 }
 
 body {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Text",
-      "Segoe UI", sans-serif;
-    background-color: var(--bg);
-    color: var(--text);
-    line-height: 1.6;
+    font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
+    font-size: 16px;
+    letter-spacing: 0.01em;
+    line-height: 1.65;
 }
 
 /* --------- Global text justification --------- */
