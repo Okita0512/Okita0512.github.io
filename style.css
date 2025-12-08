@@ -103,7 +103,7 @@ main.container {
 }
 
 .site-subtitle {
-    margin: 0 0 0.75rem;
+    margin: 0 0 1.2rem;
     text-align: center;
     color: #d8e0ef;
     font-size: 0.98rem;
@@ -114,7 +114,7 @@ main.container {
     justify-content: center;
     gap: 1.5rem;
     flex-wrap: wrap;
-    padding-bottom: 0.75rem;
+    padding-bottom: 1.4rem;
     font-size: 1.05rem;
 }
 
