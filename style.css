@@ -311,6 +311,12 @@ main.container {
     margin-bottom: 1rem;
 }
 
+.section.preprints {
+    background: none;
+    border-radius: 0;
+    padding: 0.5rem 0;
+}
+
 /* Paragraphs & lists */
 .section p {
     margin: 0.3rem 0 0.8rem;
@@ -405,6 +411,22 @@ main.container {
     align-items: center;
     justify-content: center;
 }
+
+.preprints .pub-num {
+    background: #555;
+}
+
+/* Venue-specific tag colors */
+li.tag-arpc .pub-num { background: #c01e11; }       /* ARPC */
+li.tag-natcomm .pub-num { background: #e63323; }     /* Nat. Commun. */
+li.tag-jcp .pub-num { background: #2914bd; }         /* J. Chem. Phys. */
+li.tag-jacs .pub-num { background: #26317d; }        /* JACS */
+li.tag-nano .pub-num { background: #d2232a; }        /* Nano Lett. */
+li.tag-jpcl .pub-num { background: #00a69c; }        /* J. Phys. Chem. Lett. */
+li.tag-comm .pub-num { background: #60abce; }        /* Communications Materials */
+li.tag-nanoph .pub-num { background: #002850; }      /* Nanophotonics */
+li.tag-angew .pub-num { background: #b0d0ec; }       /* Angew. Chem. Int. Ed. */
+li.tag-small .pub-num { background: #111514; }       /* Small */
 
 .geo-info {
     color: var(--muted);
