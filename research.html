@@ -5,7 +5,7 @@
     <title>Research | Wenxiang Ying</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description"
-          content="Research of Wenxiang Ying: quantum dynamics, cavity quantum electrodynamics, polariton chemistry, photophysics, and transport." />
+          content="Research of Wenxiang Ying: non-equilibrium quantum dynamics, light–matter hybrid systems, electromagnetic environment engineering, chirality, and spin-selective quantum phenomena." />
     <link rel="stylesheet" href="style.css" />
     <script src="main.js" defer></script>
 </head>
@@ -27,33 +27,29 @@
     <!-- Overview -->
     <section class="section">
         <p>
-            My current research lies at the interface of <strong>quantum dynamics</strong>,
-            <strong>cavity quantum electrodynamics</strong>, and
-            <strong>condensed-phase chemical physics</strong>.
-            I am broadly interested in how quantum coherence, dissipation, and
-            strong light-matter coupling work together to determine
-            chemical reactivity, photophysics, and transport in complex environments, 
-            which are often in close contact with ongoing experiments.
+            My research focuses on <strong>non-equilibrium quantum dynamics</strong> and
+            <strong>transport</strong> in light–matter hybrid systems, with emphasis on
+            <strong>nanophotonic environments</strong>, <strong>quantum materials</strong>,
+            energy transfer, and <strong>chiral light–matter interactions</strong>.
         </p>
         <p>
-            Methodologically, I work on rigorous and approximate
-            <strong>open quantum system approaches</strong>, including
-            hierarchical equations of motion, quantum master equations,
-            mixed quantum-classical dynamics, and path-integral inspired methods.
-            I also employ finite-difference time-domain (FDTD) simulations 
-            to study electromagnetic field
-            interacting with (chiral) molecular systems in nanophotonic environments.
+            Methodologically, I employ rigorous and approximate
+            <strong>open quantum system approaches</strong>—including hierarchical equations of motion,
+            quantum master equations, tensor-network methods, and mixed quantum-classical dynamics—as well as
+            classical electrodynamics simulations (FDTD) to bridge microscopic quantum descriptions
+            with realistic field profiles in nanophotonic and plasmonic environments.
         </p>
     </section>
 
-    <!-- Quantum dynamics methods -->
+    <!-- Non-equilibrium Quantum Dynamics -->
     <section class="section section-alt">
-        <h2>Quantum Dynamics Methods</h2>
+        <h2>Non-equilibrium Quantum Dynamics in Open Systems</h2>
         <p>
-            A central theme of my work is the development and application of
-            quantum dynamics methods for open systems in condensed phases.
+            A central theme of my work is the theoretical and computational study of
+            many-body open quantum dynamics, decoherence, and energy transport in
+            complex chemical and material environments.
             These methods aim to capture non-Markovian environmental effects,
-            quantum coherence, dephasing and decoherence, on equal footing.
+            quantum coherence, dephasing, and dissipation on equal footing.
         </p>
         <ul class="item-list">
             <li>
@@ -65,80 +61,146 @@
             </li>
             <li>
                 <strong>Approximate Quantum Master Equations.</strong>
-                (Variational) Polaron-transformed, perturbative master equations to
-                understand their range of validity in realistic parameter regimes.
+                (Variational) polaron-transformed and perturbative master equations to
+                understand their range of validity in realistic parameter regimes,
+                including analytic rate theories for polariton relaxation dynamics.
+            </li>
+            <li>
+                <strong>Tensor Network Methods.</strong>
+                Application of tensor-network approaches to capture many-body correlations
+                and quantum entanglement in open systems beyond the reach of
+                exact diagonalization, enabling scalable simulations of
+                large light–matter aggregates.
             </li>
             <li>
                 <strong>Mixed Quantum-Classical Dynamics.</strong>
-                Use of Ehrenfest, surface-hopping, to describe nonadiabatic processes and to provide
-                intuitive pictures that complement more rigorous approaches.
-            </li>
-            <li>
-                <strong>Ring-Polymer Molecular Dynamics (RPMD).</strong>
-                Application of RPMD to study nuclear quantum effects in chemical reactions and transport.
+                Ehrenfest and surface-hopping methods to describe nonadiabatic processes
+                and to provide intuitive pictures that complement more rigorous approaches,
+                including trajectory-based simulations of polariton relaxation.
             </li>
         </ul>
     </section>
 
-    <!-- Cavity QED and polariton chemistry -->
+    <!-- Light-Matter Hybrid Systems -->
     <section class="section">
-        <h2>Cavity QED and Polaritonic Chemistry</h2>
+        <h2>Light–Matter Hybrid Systems and Polaritonic Phenomena</h2>
         <p>
             A major focus of my doctoral and postdoctoral research is
             <strong>collective strong light-matter coupling</strong> and
-            its impact on chemical dynamics.
+            its impact on chemical dynamics, photophysics, and transport.
             By embedding molecules or materials inside optical cavities or
-            nanophotonic structures (that constructed with specific experimental
-            platforms, including Fabry-Pérot microcavities, plasmonic structures, 
-            organic materials, 2D materials, and so on), one can form hybrid 
-            light-matter states (polaritons) that modify reaction pathways and 
-            energy-transport channels.
+            nanophotonic structures (Fabry–Pérot microcavities, plasmonic structures,
+            organic materials, and 2D materials), one can form hybrid
+            light-matter states (polaritons) that modify reaction pathways,
+            energy-transport channels, and emergent many-body phenomena.
         </p>
         <ul class="item-list">
             <li>
                 <strong>Vibrational Polariton Chemistry.</strong>
-                Recent experiments have demonstrated that chemical kinetics 
-                can be enhanced or suppressed by coupling molecular vibrations 
-                to quantized radiation modes inside an optical microcavity.
-                This phenomenon is referred to as the vibrational strong coupling 
-                (VSC) enabled change of reactivities. This new strategy of VSC, if feasible, 
-                will allow one to bypass some intrinsic difficulties 
-                (such as intramolecular vibrational energy transfer) 
-                encountered in mode-selective chemistry that uses infrared (IR) excitation 
-                to tune chemical reactivities, offering a paradigm shift of synthetic chemistry 
-                through cavity-enabled bond-selective chemical transformations. 
-                I have been performing quantum-dynamical studies of how coupling molecular vibrations
+                Recent experiments have demonstrated that chemical kinetics
+                can be enhanced or suppressed by coupling molecular vibrations
+                to quantized radiation modes inside an optical microcavity—
+                a phenomenon known as vibrational strong coupling (VSC) enabled reactivity change.
+                This strategy, if fully understood, offers a paradigm shift
+                in synthetic chemistry through cavity-enabled bond-selective transformations,
+                bypassing intrinsic difficulties such as intramolecular vibrational energy redistribution
+                encountered in mode-selective IR chemistry.
+                I have performed quantum-dynamical studies of how coupling molecular vibrations
                 to cavity modes can enhance, suppress, or reshape reaction rates,
-                including the identification of “resonant suppression” conditions
+                including identification of "resonant suppression" conditions
                 and the role of dark-state manifolds.
             </li>
             <li>
                 <strong>Exciton-Polariton Photophysics and Transport.</strong>
                 Microscopic modelling of exciton-photon hybridization in
-                inorganic and organic (molecular) systems. 
+                inorganic and organic (molecular) systems.
                 Analysis of how disorder, vibronic coupling, and cavity
-                loss affect exciton and polariton relaxation, decoherence, 
-                and propagation. For polariton transport, my research includes
-                the emergence of ballistic vs diffusive regimes and the
-                possibility of long-range transport under strong coupling,
-                with particular interest in group-velocity renormalization, 
-                dispersion engineering, and the role of quantum coherence.
+                loss affect exciton and polariton relaxation, decoherence,
+                and propagation. For polariton transport, my research addresses
+                the emergence of ballistic versus diffusive regimes,
+                the possibility of long-range transport under strong coupling,
+                group-velocity renormalization, dispersion engineering,
+                motional narrowing, and the role of quantum coherence.
             </li>
             <li>
                 <strong>Cavity-Modified Electron Transfer.</strong>
                 Fermi's-golden-rule based rate theories for nonadiabatic
-                electron transfer in confined environments, aiming to unify
-                Marcus-Jortner-type descriptions with microscopic cavity QED
-                and to clarify under what conditions cavity modes can
-                substantially alter charge-transfer kinetics.
+                electron transfer in confined electromagnetic environments,
+                aiming to unify Marcus–Jortner-type descriptions with microscopic cavity QED
+                and to clarify under what conditions cavity modes—including lossy cavities—
+                can substantially alter charge-transfer kinetics.
+            </li>
+        </ul>
+    </section>
+
+    <!-- Electromagnetic Environment Engineering -->
+    <section class="section section-alt">
+        <h2>Electromagnetic Environment Engineering</h2>
+        <p>
+            A complementary strand of my research concerns the engineering and simulation of
+            structured electromagnetic fields in nanophotonic and plasmonic environments,
+            and their impact on molecular and material quantum dynamics.
+        </p>
+        <ul class="item-list">
+            <li>
+                <strong>Finite-Difference Time-Domain (FDTD) Simulations.</strong>
+                Classical electrodynamics simulations to resolve realistic field profiles
+                in cavities, plasmonic resonators, and metasurfaces,
+                bridging microscopic quantum-dynamics descriptions with
+                experimentally relevant electromagnetic environments.
             </li>
             <li>
-                <strong>Nanophotonic Field Structures.</strong>
-                Use of simplified models and classical electrodynamics simulations
-                (such as the FDTD approach)
-                to bridge between microscopic quantum-dynamics descriptions
-                and realistic field profiles in cavities, plasmonic resonators,
-                and metasurfaces, with particular interest in chirality.
+                <strong>Nanophotonic and Plasmonic Field Structures.</strong>
+                Use of simplified models and full-wave simulations
+                to understand how local field enhancement, mode volumes,
+                and spatial field distributions in plasmonic hotspots and
+                nanophotonic resonators govern light–matter coupling strengths
+                and resulting quantum dynamics.
+            </li>
+            <li>
+                <strong>Quantum-Classical Hybridization.</strong>
+                Development of frameworks that couple FDTD-level electromagnetic
+                descriptions to quantum-dynamical treatments of molecules and materials,
+                enabling multiscale modelling of light-driven processes in
+                realistic photonic device geometries.
+            </li>
+        </ul>
+    </section>
+
+    <!-- Chirality and Spin-Selective Quantum Phenomena -->
+    <section class="section">
+        <h2>Chirality and Spin-Selective Quantum Phenomena</h2>
+        <p>
+            An emerging direction in my research is the microscopic theory and
+            quantum dynamical modeling of <strong>chiral light–matter interactions</strong>
+            and <strong>chirality-induced spin selectivity (CISS)</strong>.
+            CISS—the experimental observation that chiral molecules preferentially
+            transmit electrons of one spin polarization—remains incompletely understood
+            from first principles, motivating rigorous theoretical investigation of
+            its geometric and electromagnetic origins.
+        </p>
+        <ul class="item-list">
+            <li>
+                <strong>Chiral Light–Matter Interactions.</strong>
+                Theoretical treatment of how chiral electromagnetic modes
+                (circularly polarized light, chiral plasmonic near-fields)
+                couple selectively to chiral molecular systems,
+                with particular interest in enantioselective photophysics
+                and the role of nanophotonic environments in amplifying chiral discrimination.
+            </li>
+            <li>
+                <strong>Chirality-Induced Spin Selectivity (CISS).</strong>
+                Quantum dynamical modeling of spin-selective electron transport through
+                chiral molecular assemblies, aiming to disentangle the relative roles of
+                spin–orbit coupling, molecular geometry, and environmental decoherence
+                in giving rise to the CISS effect.
+            </li>
+            <li>
+                <strong>Geometric and Electromagnetic Origins of Chiral Responses.</strong>
+                Unified theoretical framework connecting molecular chirality,
+                geometric phase effects, and structured electromagnetic environments
+                to understand and predict chiral quantum phenomena across different
+                scales and experimental platforms.
             </li>
         </ul>
     </section>
